@@ -1,6 +1,10 @@
 # Ignore the target
 /target/*
 
+# Ignore the pom.xml of maven and IDEA
+.idea
+pom.xml
+
 # Compiled class file
 *.class
 
