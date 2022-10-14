@@ -4,6 +4,7 @@
 # Ignore the pom.xml of maven and IDEA
 .idea
 pom.xml
+.gitignore
 
 # Compiled class file
 *.class
