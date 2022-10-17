@@ -56,11 +56,11 @@ public class LeetCode_PathSum {
         }
 
         if(root.left == null && root.right == null) {
-            return targetSum == root.val;
+            return targetSum == (int) root.val;
         }
 
-        return hasPathSum(root.left, targetSum- root.val)
-                || hasPathSum(root.right, targetSum - root.val);
+        return hasPathSum(root.left, targetSum- (int) root.val)
+                || hasPathSum(root.right, targetSum - (int) root.val);
     }
 
     public static void getPath(TreeNode tree, List<Integer> path, List<List<Integer>> pathList) {
@@ -70,17 +70,17 @@ public class LeetCode_PathSum {
 
         if (tree.left == null || tree.right == null) {
             path = new ArrayList<>();
-            path.add(tree.val);
+            path.add((int)tree.val);
             pathList.add(path);
         }
 
         if (tree.left != null) {
-            path.add(tree.left.val);
+            path.add((int)tree.left.val);
             getPath(tree.left, path, pathList);
         }
 
         if (tree.right != null) {
-            path.add(tree.right.val);
+            path.add((int)tree.right.val);
             getPath(tree.right, path, pathList);
         }
 

@@ -51,7 +51,7 @@ public class LeetCode_TraverseTree {
         if(tree == null) {
             return;
         }
-        res.add(tree.val);
+        res.add((int)tree.val);
         preOrderTraverse(tree.left,res);
         preOrderTraverse(tree.right,res);
     }
@@ -65,7 +65,7 @@ public class LeetCode_TraverseTree {
             return;
         }
         inOrderTraverse(tree.left,res);
-        res.add(tree.val);
+        res.add((int)tree.val);
         inOrderTraverse(tree.right,res);
     }
 
@@ -79,7 +79,7 @@ public class LeetCode_TraverseTree {
         }
         postOrderTraverse(tree.left,res);
         postOrderTraverse(tree.right,res);
-        res.add(tree.val);
+        res.add((int)tree.val);
     }
 
 

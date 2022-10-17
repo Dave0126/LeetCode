@@ -71,7 +71,7 @@ public class LeetCode_TraverseTreeByLevel {
             list.add(new ArrayList<>());
         }
 
-        list.get(level).add(tree.val);
+        list.get(level).add((int)tree.val);
         // 递归
         levelOrderTraverse(tree.left, level+1, list);
         levelOrderTraverse(tree.right, level+1, list);

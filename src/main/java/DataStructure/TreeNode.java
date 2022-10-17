@@ -5,22 +5,31 @@ import com.beust.ah.A;
 import java.util.Arrays;
 import java.util.List;
 
-public class TreeNode{
-    public int val;
+public class TreeNode<T>{
+    public T val;
     public TreeNode left;
     public TreeNode right;
+    public TreeNode next = null;
 
-    public TreeNode(int val){
+
+    public TreeNode(T val){
         this.val = val;
     }
 
-    public TreeNode(int val, TreeNode left, TreeNode right){
+    public TreeNode(T val, TreeNode left, TreeNode right){
         this.val = val;
         this.left = left;
         this.right = right;
     }
 
-    public TreeNode(int val, TreeNode left){
+    public TreeNode(T val, TreeNode left, TreeNode right, TreeNode next){
+        this.val = val;
+        this.left = left;
+        this.right = right;
+        this.next = next;
+    }
+
+    public TreeNode(T val, TreeNode left){
         this.val = val;
         this.left = left;
     }
