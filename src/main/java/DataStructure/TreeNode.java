@@ -16,6 +16,8 @@ public class TreeNode<T>{
         this.val = val;
     }
 
+    public TreeNode(){}
+
     public TreeNode(T val, TreeNode left, TreeNode right){
         this.val = val;
         this.left = left;
