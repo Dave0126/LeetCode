@@ -1,6 +1,6 @@
 package LeetCode;
 
-public class LeetCode_125 {
+public class LeetCode_0125 {
     public static void main(String[] args) {
 
         String s = "qwertyuiop[]';lkjhgfdsazxcvbnmmnbvcxzasdfghjkl;'][poiuytrewq";

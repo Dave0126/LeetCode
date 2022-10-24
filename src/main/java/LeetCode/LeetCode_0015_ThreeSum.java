@@ -42,7 +42,7 @@ import java.util.stream.Collectors;
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
-public class LeetCode_15_ThreeSum {
+public class LeetCode_0015_ThreeSum {
     public static void main(String[] args) {
         int[] numList = {0,0,0};
         List<List<Integer>> result = threeSum(numList);

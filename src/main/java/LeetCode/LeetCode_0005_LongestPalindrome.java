@@ -34,7 +34,7 @@ package LeetCode;
 
 
 
-public class LeetCode_5_LongestPalindrome {
+public class LeetCode_0005_LongestPalindrome {
     public static void main(String[] args) {
         String s = "a";
         String res = longestPalindrome(s);

@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class LeetCode_136_SingleNumber {
+public class LeetCode_0136_SingleNumber {
     public static void main(String[] args) {
         int[] numList = {2,2,1};
         int res = singleNumber(numList);

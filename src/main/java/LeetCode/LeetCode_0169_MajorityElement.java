@@ -27,7 +27,7 @@ n == nums.length
 
 import java.util.Arrays;
 
-public class LeetCode_169_MajorityElement {
+public class LeetCode_0169_MajorityElement {
     public static void main(String[] args) {
         int[] nums = {1,1,1,1,1,1,1};
         int result = majorityElement(nums);
