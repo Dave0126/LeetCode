@@ -3,7 +3,7 @@ package LeetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode_SetZores {
+public class LeetCode_SetZeros {
     public static void main(String[] args) {
         int[][] matrix = {  {0,2,3},
                             {4,5,0},
