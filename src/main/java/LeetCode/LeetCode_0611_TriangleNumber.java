@@ -25,7 +25,7 @@ import java.util.Arrays;
  * 0 <= nums[i] <= 1000
  */
 
-public class LeetCode_611_TriangleNumber {
+public class LeetCode_0611_TriangleNumber {
 
     public static void main(String[] args) {
         int[] nums = new int[]{4,2,3,4};
