@@ -35,6 +35,12 @@ public class LeetCode_0169_MajorityElement {
     }
 
     public static int majorityElement(int[] nums) {
+//        int result = solution1(nums);
+        int result = solution2(nums);
+        return result;
+    }
+
+    public static int solution1(int[] nums){
         int res = -1;
         Arrays.sort(nums);
         int count = 1;
@@ -56,5 +62,15 @@ public class LeetCode_0169_MajorityElement {
             }
         }
         return res;
+    }
+
+    /**
+     * 思路：根据题意，可以得出当满足题意时，这个数组的排序后的中位数一定是个数超过1/2的元素
+     * @param nums
+     * @return
+     */
+    public static int solution2(int[] nums){
+        Arrays.sort(nums);
+        return nums[nums.length/2];
     }
 }
