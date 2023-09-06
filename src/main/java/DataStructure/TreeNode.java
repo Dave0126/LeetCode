@@ -11,6 +11,37 @@ public class TreeNode<T>{
     public TreeNode right;
     public TreeNode next = null;
 
+    public T getVal() {
+        return val;
+    }
+
+    public TreeNode getLeft() {
+        return left;
+    }
+
+    public TreeNode getRight() {
+        return right;
+    }
+
+    public TreeNode getNext() {
+        return next;
+    }
+
+    public void setVal(T val) {
+        this.val = val;
+    }
+
+    public void setLeft(TreeNode left) {
+        this.left = left;
+    }
+
+    public void setRight(TreeNode right) {
+        this.right = right;
+    }
+
+    public void setNext(TreeNode next) {
+        this.next = next;
+    }
 
     public TreeNode(T val){
         this.val = val;
@@ -34,14 +65,6 @@ public class TreeNode<T>{
     public TreeNode(T val, TreeNode left){
         this.val = val;
         this.left = left;
-    }
-
-    private void setLeft(TreeNode treeNode) {
-        this.left = treeNode;
-    }
-
-    private void setRight(TreeNode treeNode) {
-        this.right = treeNode;
     }
 
     /**
@@ -159,4 +182,16 @@ public class TreeNode<T>{
             return tree;
         }
     }
+
+//    public boolean isSameWith(TreeNode other){
+//        if(this == null && other == null){
+//            return true;
+//        }
+//        if (this == null || other == null) {
+//            return false;
+//        }
+//        return this.getVal().equals(other.getVal())
+//                && this.getLeft().isSameWith(other.getLeft())
+//                && this.getRight().isSameWith(other.getRight());
+//    }
 }
