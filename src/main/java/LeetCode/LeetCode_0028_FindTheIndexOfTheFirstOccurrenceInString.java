@@ -29,8 +29,8 @@ package LeetCode;
  */
 public class LeetCode_0028_FindTheIndexOfTheFirstOccurrenceInString {
     public static void main(String[] args) {
-        String haystack = "leetcode";
-        String needle = "leeto";
+        String haystack = "mississippi";
+        String needle = "issip";
         int result = strStr(haystack, needle);
         System.out.println(result);
     }
